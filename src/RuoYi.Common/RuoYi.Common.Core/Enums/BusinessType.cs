@@ -1,0 +1,16 @@
+namespace RuoYi.Common.Core.Enums
+{
+    public enum BusinessType
+    {
+        OTHER = 0,
+        INSERT = 1,
+        UPDATE = 2,
+        DELETE = 3,
+        GRANT = 4,
+        EXPORT = 5,
+        IMPORT = 6,
+        FORCE = 7,
+        GEN_CODE = 8,
+        CLEAN = 9
+    }
+}
