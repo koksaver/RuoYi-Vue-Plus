@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>RuoYi.System</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\RuoYi.Common\RuoYi.Common.Core\RuoYi.Common.Core.csproj" />
+    <ProjectReference Include="..\..\RuoYi.Common\RuoYi.Common.Mybatis\RuoYi.Common.Mybatis.csproj" />
+    <ProjectReference Include="..\..\RuoYi.Common\RuoYi.Common.Redis\RuoYi.Common.Redis.csproj" />
+    <ProjectReference Include="..\..\RuoYi.Common\RuoYi.Common.Security\RuoYi.Common.Security.csproj" />
+    <ProjectReference Include="..\..\RuoYi.Common\RuoYi.Common.Log\RuoYi.Common.Log.csproj" />
+    <ProjectReference Include="..\..\RuoYi.Common\RuoYi.Common.Excel\RuoYi.Common.Excel.csproj" />
+  </ItemGroup>
+</Project>

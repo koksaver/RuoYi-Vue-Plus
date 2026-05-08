@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>RuoYi.Admin</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RuoYi.Common\RuoYi.Common.Core\RuoYi.Common.Core.csproj" />
+    <ProjectReference Include="..\RuoYi.Common\RuoYi.Common.Mybatis\RuoYi.Common.Mybatis.csproj" />
+    <ProjectReference Include="..\RuoYi.Common\RuoYi.Common.Redis\RuoYi.Common.Redis.csproj" />
+    <ProjectReference Include="..\RuoYi.Common\RuoYi.Common.Web\RuoYi.Common.Web.csproj" />
+    <ProjectReference Include="..\RuoYi.Common\RuoYi.Common.Log\RuoYi.Common.Log.csproj" />
+    <ProjectReference Include="..\RuoYi.Common\RuoYi.Common.Security\RuoYi.Common.Security.csproj" />
+    <ProjectReference Include="..\RuoYi.Common\RuoYi.Common.Excel\RuoYi.Common.Excel.csproj" />
+    <ProjectReference Include="..\RuoYi.Common\RuoYi.Common.Oss\RuoYi.Common.Oss.csproj" />
+    <ProjectReference Include="..\RuoYi.Common\RuoYi.Common.Encrypt\RuoYi.Common.Encrypt.csproj" />
+    <ProjectReference Include="..\RuoYi.Common\RuoYi.Common.Tenant\RuoYi.Common.Tenant.csproj" />
+    <ProjectReference Include="..\RuoYi.Common\RuoYi.Common.Mail\RuoYi.Common.Mail.csproj" />
+    <ProjectReference Include="..\RuoYi.Common\RuoYi.Common.WebSocket\RuoYi.Common.WebSocket.csproj" />
+    <ProjectReference Include="..\RuoYi.Common\RuoYi.Common.Sse\RuoYi.Common.Sse.csproj" />
+    <ProjectReference Include="..\RuoYi.Common\RuoYi.Common.Idempotent\RuoYi.Common.Idempotent.csproj" />
+    <ProjectReference Include="..\RuoYi.Common\RuoYi.Common.RateLimiter\RuoYi.Common.RateLimiter.csproj" />
+    <ProjectReference Include="..\RuoYi.Common\RuoYi.Common.Job\RuoYi.Common.Job.csproj" />
+    <ProjectReference Include="..\RuoYi.Modules\RuoYi.System\RuoYi.System.csproj" />
+    <ProjectReference Include="..\RuoYi.Modules\RuoYi.Generator\RuoYi.Generator.csproj" />
+  </ItemGroup>
+</Project>

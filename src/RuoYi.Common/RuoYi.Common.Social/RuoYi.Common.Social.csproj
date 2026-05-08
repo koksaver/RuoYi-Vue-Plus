@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>RuoYi.Common.Social</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RuoYi.Common.Core\RuoYi.Common.Core.csproj" />
+    <ProjectReference Include="..\RuoYi.Common.Redis\RuoYi.Common.Redis.csproj" />
+  </ItemGroup>
+</Project>
