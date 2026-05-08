@@ -1,52 +1,41 @@
-######################################################################
-# Build Tools
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.sln.docstates
+*.userprefs
+*.DotSettings.user
+*.userosscache
+.vs/
+*.csproj.user
 
-.gradle
-/build/
-!gradle/wrapper/gradle-wrapper.jar
+# ASP.NET
+wwwroot/appsettings.*.json
 
-target/
-!.mvn/wrapper/maven-wrapper.jar
+# NuGet
+packages/
+*.nupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
 
-######################################################################
-# IDE
+# VS Code
+.vscode/
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
+# Rider
+.idea/
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+# OS
+.DS_Store
+Thumbs.db
 
-### VS CODE ###
-.vscode
-
-### JRebel ###
-rebel.xml
-
-### NetBeans ###
-nbproject/private/
-build/*
-nbbuild/
-nbdist/
-.nb-gradle/
-
-######################################################################
-# Others
-*.log
-*.log.gz
-*.xml.versionsBackup
-*.swp
-
-!*/build/*.java
-!*/build/*.html
-!*/build/*.xml
-
-.flattened-pom.xml
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+bld/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/

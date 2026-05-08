@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>RuoYi.Admin</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RuoYi.Common\RuoYi.Common.Core\RuoYi.Common.Core.csproj" />
+    <ProjectReference Include="..\RuoYi.Common\RuoYi.Common.Cache\RuoYi.Common.Cache.csproj" />
+    <ProjectReference Include="..\RuoYi.Modules\RuoYi.System\RuoYi.System.csproj" />
+  </ItemGroup>
+</Project>
