@@ -50,3 +50,13 @@ nbdist/
 !*/build/*.xml
 
 .flattened-pom.xml
+
+# .NET
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.userosscache
+*.sln.doccache
