@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>RuoYi.System</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Mapster" Version="7.4.0" />
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\RuoYi.Common\RuoYi.Common.Core\RuoYi.Common.Core.csproj" />
+    <ProjectReference Include="..\..\RuoYi.Common\RuoYi.Common.Cache\RuoYi.Common.Cache.csproj" />
+  </ItemGroup>
+</Project>
