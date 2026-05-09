@@ -42,4 +42,13 @@ namespace RuoYi.Common.Doc
             });
         }
     }
+
+    public static class SwaggerConfigExtensions
+    {
+        public static IServiceCollection AddSwaggerConfig(this IServiceCollection services, string title = "RuoYi-Net API", string version = "v1")
+        {
+            SwaggerConfig.Configure(services, title, version);
+            return services;
+        }
+    }
 }

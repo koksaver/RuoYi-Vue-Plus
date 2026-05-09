@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SqlSugar;
 
@@ -27,6 +28,15 @@ namespace RuoYi.Common.Mybatis
 
                 return db;
             });
+        }
+
+        public static IServiceCollection AddSqlSugarSetup(this IServiceCollection services, IConfiguration configuration)
+        {
+            var connectionString = configuration.GetConnectionString("DefaultConnection")
+                ?? configuration["ConnectionStrings:DefaultConnection"]
+                ?? "Server=localhost;Database=ruoyi;User=root;Password=root;Charset=utf8mb4";
+            services.AddSqlSugar(connectionString, DbType.MySql);
+            return services;
         }
     }
 }

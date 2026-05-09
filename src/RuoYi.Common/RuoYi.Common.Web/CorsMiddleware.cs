@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace RuoYi.Common.Web
 {
@@ -35,6 +36,25 @@ namespace RuoYi.Common.Web
         public static IApplicationBuilder UseCorsMiddleware(this IApplicationBuilder builder)
         {
             return builder.UseMiddleware<CorsMiddleware>();
+        }
+
+        public static IApplicationBuilder UseCorsSetup(this IApplicationBuilder builder)
+        {
+            return builder.UseMiddleware<CorsMiddleware>();
+        }
+
+        public static IServiceCollection AddCorsSetup(this IServiceCollection services)
+        {
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(policy =>
+                {
+                    policy.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader();
+                });
+            });
+            return services;
         }
     }
 }

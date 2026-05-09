@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace RuoYi.Common.Redis
@@ -19,6 +20,13 @@ namespace RuoYi.Common.Redis
                 return new RedisLock(conn.GetDatabase());
             });
             return services;
+        }
+
+        public static IServiceCollection AddRedisSetup(this IServiceCollection services, IConfiguration configuration)
+        {
+            var connectionString = configuration["Redis:Connection"]
+                ?? "localhost:6379,password=,defaultDatabase=0";
+            return services.AddRedisService(connectionString);
         }
     }
 }
